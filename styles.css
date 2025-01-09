@@ -58,18 +58,16 @@ body {
   text-decoration: none;
   background: linear-gradient(120deg, #3b82f6, #2563eb);
   color: white;
-  padding: 0.875rem 2.5rem;
-  border-radius: 9999px;
+  padding: 1rem 2rem;
+  border-radius: 9999rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
   font-size: 1.25rem;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
 }
 
 .cta-button:hover {
-  transform: translateY(-2px);
+  color: white;
+  transform: translateY(-1px);
   box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.3);
 }
 
@@ -199,21 +197,27 @@ body {
 /* Add this to your existing media query */
 @media (max-width: 768px) {
   .navbar {
-    top: 1rem;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
-  .nav-links {
-    gap: 1.5rem;
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
-  .nav-links a {
-    display: none;
+  .nav-links a:not(:last-child) {
+    display: none; /* Hide all links except the last one */
+  }
+
+  .logo {
+    margin-right: auto;
   }
 
   .nav-cta {
-    font-size: 0.875rem;
-    padding: 0.5rem 1rem;
+    display: block; /* Ensure the CTA is visible */
+    margin-left: auto;
   }
 }
 
