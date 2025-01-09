@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 4rem; /* Reduced from 6rem for better visual rhythm */
   padding: 2rem;
 }
 
@@ -88,6 +88,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   padding: 2rem;
+  height: 100%; /* Make all cards same height */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -363,10 +364,13 @@ body {
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+.form-group label i {
+  color: #3b82f6;
 }
 
 .form-group input,
@@ -378,7 +382,8 @@ body {
   border-radius: 0.5rem;
   color: white;
   font-size: 1rem;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .form-group textarea {
@@ -391,6 +396,7 @@ body {
   outline: none;
   border-color: #3b82f6;
   background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
 }
 
 .submit-btn {
@@ -403,6 +409,10 @@ body {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
 }
@@ -443,6 +453,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .alt-btn:hover {
@@ -490,5 +501,20 @@ body {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+}
+
+/* Improve mobile responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 8rem;
+  }
+
+  .services {
+    padding: 0 1rem;
+  }
+
+  .contact-container {
+    margin: 0 1rem;
   }
 }
