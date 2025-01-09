@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", -apple-system, system-ui, sans-serif;
   background: linear-gradient(to bottom, #0f172a, #1e293b);
@@ -22,7 +26,7 @@ body {
   max-width: 42rem;
   padding: 0 1rem;
   animation: fadeInUp 1s ease-out;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .title {
@@ -75,6 +79,7 @@ body {
   max-width: 1200px;
   width: 100%;
   padding: 0 1rem;
+  padding-top: 2rem;
 }
 
 .service {
@@ -172,7 +177,7 @@ body {
 .nav-cta {
   background: linear-gradient(120deg, #3b82f6, #2563eb);
   color: white;
-  padding: 0.5rem 1.25rem;
+  padding: 1rem 1.5rem;
   border-radius: 9999px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -214,6 +219,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 6rem auto;
+  margin-top: 3rem;
   padding: 0 2rem;
 }
 

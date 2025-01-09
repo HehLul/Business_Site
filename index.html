@@ -15,28 +15,28 @@
   <body>
     <nav class="navbar">
       <div class="nav-content">
-        <a href="/" class="logo">
+        <a href="#hero" class="logo">
           <span class="logo-text">ProDev</span>
           <span class="logo-text accent">Studios</span>
         </a>
         <div class="nav-links">
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/faq">FAQ</a>
-          <button class="nav-cta">Let's Connect</button>
+          <a href="#services">Services</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#contact">Contact</a>
+          <button class="nav-cta">Get a Quote</button>
         </div>
       </div>
     </nav>
-    <div class="hero">
+    <div class="hero" id="hero">
       <div class="title">
-        Building <span class="accent-text">enterprise</span> level<br />
-        <span class="gray-text">software</span> solutions
+        <span class="accent-text">Digital solutions</span> crafted<br />
+        with <span class="gray-text">precision and confidence</span>
       </div>
-      <div class="subtitle">Enterprise Software • Web Apps • MVPs</div>
+      <div class="subtitle">Enterprise Software • Websites • MVPs</div>
       <button class="cta-button">Get Started</button>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <div class="service">
         <div class="icon">🏢</div>
         <h3>Enterprise Software Development</h3>
@@ -64,10 +64,9 @@
     </div>
 
     <!-- Add this after your services section -->
-    <div class="value-prop">
+    <div class="value-prop" id="why-us">
       <h2 class="section-title">
-        Getting help to build enterprise software shouldn't be hard and
-        formal...
+        Getting your project built shouldn't be a struggle...
       </h2>
       <p class="section-subtitle">
         Let's make building your next project a breeze.
@@ -130,4 +129,5 @@
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
