@@ -558,3 +558,46 @@ body {
     transform: translateY(0);
   }
 }
+
+
+
+@media (max-width: 768px) {
+  /* Navbar Adjustments */
+  .navbar {
+    padding: 0.75rem 1.5rem; /* Reduce navbar height */
+  }
+
+  .navbar-container {
+    gap: 1rem; /* Add more gap between logo and CTA */
+  }
+
+  /* Hero Section Adjustments */
+  .hero-content {
+    text-align: center;
+    padding: 2rem 1rem; /* Adjust padding */
+  }
+
+  .hero-title {
+    font-size: 3rem; /* Increase title size */
+    line-height: 1.2;
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Reduce font size */
+    padding: 1rem 1.75rem; /* Reduce button size */
+  }
+
+  /* Comparison and Contact Container Adjustments */
+  .comparison-container,
+  .contact-container {
+    width: 100%; /* Increase width */
+    max-width: 500px; /* Add max-width for larger screens */
+    margin: 0 auto;
+  }
+  .value-prop{
+    padding: 0 1rem;
+  }
+  .contact{
+    padding: 0 1rem;
+  }
+}
