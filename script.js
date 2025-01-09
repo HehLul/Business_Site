@@ -7,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       const navbarHeight = document.querySelector(".navbar").offsetHeight;
       const targetPosition =
         target.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = targetPosition - navbarHeight - 20; // 20px extra padding
+      const offsetPosition = targetPosition - navbarHeight - 60; // 20px extra padding
 
       window.scrollTo({
         top: offsetPosition,
@@ -23,7 +23,7 @@ document.querySelector(".nav-cta").addEventListener("click", function () {
   const navbarHeight = document.querySelector(".navbar").offsetHeight;
   const targetPosition =
     contactSection.getBoundingClientRect().top + window.pageYOffset;
-  const offsetPosition = targetPosition - navbarHeight - 20;
+  const offsetPosition = targetPosition - navbarHeight - 60;
 
   window.scrollTo({
     top: offsetPosition,
@@ -66,11 +66,11 @@ form.addEventListener('submit', async (e) => {
       form.reset();
       submitBtn.innerHTML = 'Sent! <i class="fa-solid fa-check"></i>';
       
-      // Optional: Show success message to user
-      const successMsg = document.createElement('div');
-      successMsg.className = 'success-message';
-      successMsg.innerHTML = 'Thanks! I'll get back to you within 24 hours.';
-      form.appendChild(successMsg);
+      // // Optional: Show success message to user
+      // const successMsg = document.createElement('div');
+      // successMsg.className = 'success-message';
+      // successMsg.innerHTML = 'Thanks! I'll get back to you within 24 hours.';
+      // form.appendChild(successMsg);
       
       setTimeout(() => {
         submitBtn.innerHTML = 'Get Your Quote <i class="fa-solid fa-arrow-right"></i>';

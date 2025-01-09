@@ -55,6 +55,7 @@ body {
 }
 
 .cta-button {
+  text-decoration: none;
   background: linear-gradient(120deg, #3b82f6, #2563eb);
   color: white;
   padding: 0.875rem 2.5rem;
@@ -163,7 +164,7 @@ body {
   gap: 2.5rem;
 }
 
-.nav-links a {
+.nav-links a:not(:last-child) {
   color: #94a3b8;
   text-decoration: none;
   font-size: 0.95rem;
@@ -176,6 +177,7 @@ body {
 }
 
 .nav-cta {
+  text-decoration: none;
   background: linear-gradient(120deg, #3b82f6, #2563eb);
   color: white;
   padding: 1rem 1.5rem;
@@ -189,6 +191,7 @@ body {
 }
 
 .nav-cta:hover {
+  color: white;
   transform: translateY(-1px);
   box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.3);
 }
