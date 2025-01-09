@@ -180,7 +180,7 @@ body {
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 9999px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   border: none;
@@ -368,6 +368,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 .form-group label i {
   color: #3b82f6;
