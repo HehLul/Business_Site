@@ -79,7 +79,7 @@
         Getting your project built shouldn't be a struggle...
       </h2>
       <p class="section-subtitle">
-        Let's make building your next project a breeze.
+        Let's make building your next project a breeze!
       </p>
 
       <div class="comparison-container">
@@ -138,21 +138,42 @@
         </div>
       </div>
     </div>
-
     <div class="contact" id="contact">
       <h2 class="section-title">Let's Build Something Great!</h2>
       <p class="section-subtitle">Get a quote within 24 hours</p>
 
       <div class="contact-container">
-        <div class="contact-form">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Web3Forms Required Fields -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="80dd089a-fff2-4b19-a503-37493730eb98"
+          />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+
           <div class="form-group">
             <label><i class="fa-regular fa-user"></i> Your Name</label>
-            <input type="text" placeholder="John Doe" />
+            <input type="text" name="name" placeholder="John Doe" required />
           </div>
 
           <div class="form-group">
             <label><i class="fa-regular fa-envelope"></i> Email</label>
-            <input type="email" placeholder="email@example.com" />
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+            />
           </div>
 
           <div class="form-group">
@@ -161,11 +182,13 @@
               Requirements</label
             >
             <textarea
+              name="message"
               placeholder="Describe your project requirements and timeline..."
+              required
             ></textarea>
           </div>
 
-          <button class="submit-btn">
+          <button type="submit" class="submit-btn">
             Get Your Quote <i class="fa-solid fa-arrow-right"></i>
           </button>
 
@@ -176,7 +199,7 @@
                 <i class="fa-regular fa-calendar"></i> Book a free consultation
               </a>
               <a
-                href="https://twitter.com/yourhandle"
+                href="https://x.com/saadsalman04"
                 target="_blank"
                 class="alt-btn twitter"
               >
@@ -184,7 +207,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <!-- Simple Footer -->
@@ -194,7 +217,7 @@
           <span>© 2024 ProDev Studios. All rights reserved.</span>
         </div>
         <div class="footer-right">
-          <a href="mailto:hello@prodevstudios.com">hello@prodevstudios.com</a>
+          <a href="mailto:admin@prodevstudios.com">admin@prodevstudios.com</a>
         </div>
       </div>
     </footer>
